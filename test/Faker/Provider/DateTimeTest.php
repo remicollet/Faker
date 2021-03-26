@@ -209,7 +209,7 @@ final class DateTimeTest extends TestCase
      *
      * @dataProvider providerDateTimeInInterval
      */
-    public function testDateTimeInInterval($start, $interval = "+5 days", $isInFuture)
+    public function testDateTimeInInterval($start, $interval, $isInFuture)
     {
         $date = DateTimeProvider::dateTimeInInterval($start, $interval);
         $this->assertInstanceOf('\DateTime', $date);
